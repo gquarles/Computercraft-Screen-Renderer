@@ -111,16 +111,18 @@ end
 
 ----------Do everything below this line----------
 
-function hey()
-    print("Works")
-    sleep(3)
-end
 
+--Example uses--
 
-screen = renderer:new{debug = 0}
-screen:addOption("Exit", "break")
-screen:addOption("Call Func", "hey()")
-screen:addOption("Lua Shell", "shell.run('lua')")
-screen:setHeader("Please Select an Option")
-screen:setHeaderColor(colors.green)
-screen:render()
+--function hey()
+--    print("Works")
+--    sleep(3)
+--end
+
+--screen = renderer:new{debug = 0}
+--screen:addOption("Exit", "break")-
+--screen:addOption("Call Func", "hey()")
+--screen:addOption("Lua Shell", "shell.run('lua')")
+--screen:setHeader("Please Select an Option")
+--screen:setHeaderColor(colors.green)
+--screen:render()
