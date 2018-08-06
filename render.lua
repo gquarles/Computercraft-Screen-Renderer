@@ -29,21 +29,12 @@ renderer = {
 
     render = function(self)
         while true do
-            if self.debug == 1 then
-                debugTime = 0.5
-            else
-                debugTime = 0
-            end
-            sleep(debugTime)
-
             term.setTextColor(self.headerColor)
             term.clear()
             term.setCursorPos(1,1)
-            sleep(debugTime)
 
             printCenter(self.header) 
             print()
-            sleep(debugTime)
 
             term.setTextColor(self.optionColor)
 
@@ -54,7 +45,6 @@ renderer = {
                     printCenter(self.options[i])
                 end
                 print("")
-                sleep(debugTime)
             end
 
             if self.debug == 1 then
